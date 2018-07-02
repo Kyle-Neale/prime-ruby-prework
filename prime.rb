@@ -2,6 +2,10 @@ def prime?(number)
   if number < 2
     return false
   end
-  for i in (2..(number - 1))
-    if
+  for num in (2..(number - 1))
+    if number % num == 0
+      return false
+    end 
+  end
+  return true
 end
